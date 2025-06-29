@@ -1,0 +1,5 @@
+.vscode
+apache-mahout-distribution-0.13.0
+hadoop-2.8.5
+lib
+ratings.csv

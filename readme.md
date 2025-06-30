@@ -15,8 +15,50 @@
   
 <br/><br/><br/>
 
+## Description
 
-Welcome to AI Recommendation system
+### System Architecture  
+
+* Dual-approach collaborative filtering using Apache Mahout framework  
+* User-based and item-based algorithms for comprehensive recommendation coverage  
+* FileDataModel integration for CSV data processing and matrix operations  
+* Modular design with clear separation between data layer, algorithm layer, and presentation layer 
+* Enterprise-ready architecture supporting scalability and maintainability  
+ 
+### Core Implementation Components  
+ 
+Data Infrastructure  
+
+* CSV-based data model with user-item-rating triplets (UserID, MovieID, Rating)  
+* In-memory movie metadata storage for title mapping and display  
+* Synthetic dataset generation with 50 ratings across 13 movies and 10 users  
+* Rating scale normalization using 1-5 star system for consistency  
+* Data validation and error handling for missing or invalid entries  
+
+User-Based Collaborative Filtering  
+
+* Pearson correlation similarity for user preference matching  
+* Threshold-based neighborhood (0.1 threshold) for statistical significance  
+* Rating scale compensation to handle different user rating behaviors  
+* Sparse data handling through robust similarity calculations  
+* Neighborhood filtering to eliminate weak correlations and noise  
+
+Item-Based Collaborative Filtering  
+
+* Log-likelihood similarity for item-to-item relationship analysis  
+* Sparsity optimization better performance with incomplete rating matrices  
+* Stable recommendation patterns due to consistent item characteristics  
+* Popular item bias mitigation through advanced similarity measures  
+* Matrix factorization support for scalable computations
+
+
+### Output Images
+
+![](https://github.com/girishkr9331/AI-Based-Recommendation-System/blob/main/AiBasedRecommendationSystem1.png) <br/><br/>
+![](https://github.com/girishkr9331/AI-Based-Recommendation-System/blob/main/AiBasedRecommendationSystem2.png)
+  
+<br/><br/><br/>
+Welcome to AI Recommendation system  
 
 (Preferred terminal git bash & os windows)
 Insturctions to follow(must) & Internet connection required
